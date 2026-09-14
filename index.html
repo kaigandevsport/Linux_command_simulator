@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linux Command Simulator - Web Terminal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="terminal-container" onclick="document.getElementById('cmd-input').focus()">
+    <div id="terminal-output">
+        <div class="output-line system">Linux Command Simulator v1.0 [Web Terminal Emulator]</div>
+        <div class="output-line system">Type 'help' to see available commands.</div>
+        <br>
+    </div>
+    <div class="input-line">
+        <span class="prompt" id="prompt-label">user@web-terminal:<span class="path">~</span>$</span>
+        <input type="text" id="cmd-input" autofocus autocomplete="off" spellcheck="false">
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
